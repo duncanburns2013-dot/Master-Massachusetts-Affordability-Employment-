@@ -1,0 +1,286 @@
+{
+  "metadata": {
+    "title": "Massachusetts Economic & Affordability Data",
+    "last_updated": "2026-01-31",
+    "sources": {
+      "BLS": "Bureau of Labor Statistics",
+      "BEA": "Bureau of Economic Analysis",
+      "FRED": "Federal Reserve Economic Data",
+      "MIT": "MIT Living Wage Calculator",
+      "Warren_Group": "The Warren Group (MLS Data)",
+      "Census": "U.S. Census Bureau",
+      "CHIA": "Center for Health Information and Analysis",
+      "Mass_DOI": "Massachusetts Division of Insurance"
+    }
+  },
+  "unemployment": {
+    "source": "BLS LAUS - Released January 27, 2026",
+    "current": {
+      "massachusetts_rate": 4.8,
+      "national_rate": 4.4,
+      "state_rank": 44,
+      "rank_note": "44th of 51 (50 states + DC) - only 7 states worse",
+      "date": "December 2025"
+    },
+    "historical": {
+      "2019_pre_covid": 3.0,
+      "2020_peak": 16.3,
+      "2021_average": 5.4,
+      "2022_average": 3.7,
+      "2023_average": 3.5,
+      "2024_average": 4.1,
+      "2025_average": 4.7
+    },
+    "comparison_dec_2025": [
+      {"state": "South Dakota", "rate": 1.9, "rank": 1},
+      {"state": "North Dakota", "rate": 2.5, "rank": 2},
+      {"state": "New Hampshire", "rate": 3.0, "rank": 7},
+      {"state": "Massachusetts", "rate": 4.8, "rank": 44},
+      {"state": "California", "rate": 5.5, "rank": 50},
+      {"state": "DC", "rate": 6.0, "rank": 51}
+    ],
+    "insured_unemployment_rate": {
+      "massachusetts": 2.7,
+      "national_rank": "5th highest in nation",
+      "date": "January 2026"
+    },
+    "labor_force": {
+      "total": 3954100,
+      "employed": 3768000,
+      "unemployed": 186100,
+      "participation_rate": 66.6
+    }
+  },
+  "employment": {
+    "source": "BLS CES & JOLTS",
+    "jobs_change_2025": {
+      "total_change": -4500,
+      "education_health": 400,
+      "financial_services": 200,
+      "construction": 1800,
+      "trade_transport_utilities": 1300,
+      "leisure_hospitality": -1200,
+      "professional_business": -2700
+    },
+    "total_nonfarm_employment": 3640000,
+    "layoffs_2025": {
+      "through_august": 323000,
+      "yoy_change": "+13.7%"
+    },
+    "recent_graduates": {
+      "unemployment_rate": 5.76,
+      "underemployment_rate": 34.0
+    }
+  },
+  "inflation": {
+    "source": "BLS CPI - December 2025",
+    "northeast_region": {
+      "all_items_yoy": 3.3,
+      "core_yoy": 3.1,
+      "food_yoy": 3.4,
+      "energy_yoy": 5.6
+    },
+    "national": {
+      "all_items_yoy": 2.7,
+      "core_yoy": 3.2
+    },
+    "boston_metro": {
+      "all_items_yoy": 3.4,
+      "core_yoy": 3.2,
+      "food_yoy": 3.1,
+      "energy_yoy": 6.1
+    },
+    "cumulative_since_2020": {
+      "boston_cpi": 21.6,
+      "national_cpi": 19.8
+    },
+    "historical_annual": [
+      {"year": 2020, "northeast": 1.4, "national": 1.2},
+      {"year": 2021, "northeast": 4.9, "national": 4.7},
+      {"year": 2022, "northeast": 7.1, "national": 8.0},
+      {"year": 2023, "northeast": 3.9, "national": 4.1},
+      {"year": 2024, "northeast": 3.5, "national": 2.9},
+      {"year": 2025, "northeast": 3.3, "national": 2.7}
+    ]
+  },
+  "cost_of_living": {
+    "source": "BEA Regional Price Parities, C2ER Q1 2025",
+    "massachusetts_index": 108.2,
+    "national_rank": 2,
+    "rank_note": "Only Hawaii is more expensive",
+    "by_category": {
+      "overall": 108.2,
+      "housing": 130.0,
+      "utilities": 166.0,
+      "healthcare": 131.0,
+      "transportation": 102.0,
+      "food": 105.0
+    },
+    "comparison_to_national": {
+      "housing": "+30%",
+      "utilities": "+66%",
+      "healthcare": "+31%",
+      "overall": "+8.2%"
+    }
+  },
+  "income": {
+    "source": "BEA SAINC, Census ACS 2024",
+    "median_household_income": 104800,
+    "national_rank": 1,
+    "average_annual_salary": 80330,
+    "family_of_4_median": 140309,
+    "real_income_growth_2015_2024": 4.1,
+    "national_real_income_growth": 5.5,
+    "by_occupation": [
+      {"occupation": "Food Service", "avg_salary": 40280, "can_afford_basics": false},
+      {"occupation": "Healthcare Support", "avg_salary": 42970, "can_afford_basics": false},
+      {"occupation": "Personal Care", "avg_salary": 44880, "can_afford_basics": false},
+      {"occupation": "Building Maintenance", "avg_salary": 46250, "can_afford_basics": false},
+      {"occupation": "Transportation", "avg_salary": 50080, "can_afford_basics": false},
+      {"occupation": "Production", "avg_salary": 51820, "can_afford_basics": false},
+      {"occupation": "Office Admin", "avg_salary": 55740, "can_afford_basics": false},
+      {"occupation": "Sales", "avg_salary": 61060, "can_afford_basics": true},
+      {"occupation": "Protective Service", "avg_salary": 66780, "can_afford_basics": true},
+      {"occupation": "Construction", "avg_salary": 79120, "can_afford_basics": true},
+      {"occupation": "Education", "avg_salary": 80050, "can_afford_basics": true},
+      {"occupation": "Business/Finance", "avg_salary": 101770, "can_afford_basics": true},
+      {"occupation": "Healthcare Practitioners", "avg_salary": 115850, "can_afford_basics": true},
+      {"occupation": "Computer/Math", "avg_salary": 126150, "can_afford_basics": true},
+      {"occupation": "Legal", "avg_salary": 155780, "can_afford_basics": true},
+      {"occupation": "Management", "avg_salary": 160460, "can_afford_basics": true}
+    ]
+  },
+  "affordability": {
+    "source": "MIT Living Wage Calculator 2025, SmartAsset 2025",
+    "living_wage_thresholds": {
+      "single_adult": 60080,
+      "couple_no_kids": 80602,
+      "single_1_child": 114708,
+      "couple_1_child": 124849,
+      "couple_2_children": 156857
+    },
+    "comfortable_living_thresholds": {
+      "single_adult": 120141,
+      "family_of_4": 313747,
+      "methodology": "50/30/20 budget rule (50% needs, 30% wants, 20% savings)"
+    },
+    "affordability_gap": {
+      "family_needs_for_comfortable": 313747,
+      "family_median_income": 140309,
+      "gap_dollars": 173438,
+      "percent_of_comfortable": 44.7
+    },
+    "national_rankings": {
+      "family_comfortable_threshold": {"rank": 1, "note": "Highest in nation"},
+      "single_comfortable_threshold": {"rank": 2, "note": "Behind only Hawaii"}
+    }
+  },
+  "housing": {
+    "source": "Warren Group, MLS PIN, FRED",
+    "statewide_2025": {
+      "median_single_family": 638000,
+      "yoy_change": 3.7,
+      "total_sales": 43240,
+      "sales_yoy_change": 3.0,
+      "days_on_market": 39,
+      "months_supply": 1.2
+    },
+    "historical_median_prices": [
+      {"year": 2019, "price": 410000},
+      {"year": 2020, "price": 450000},
+      {"year": 2021, "price": 550000},
+      {"year": 2022, "price": 550000},
+      {"year": 2023, "price": 570000},
+      {"year": 2024, "price": 615000},
+      {"year": 2025, "price": 638000}
+    ],
+    "regional_medians_2025": {
+      "statewide": 638000,
+      "greater_boston": 800000,
+      "essex_county": 699000,
+      "newburyport": 1327602,
+      "springfield": 288000,
+      "worcester": 450000
+    },
+    "million_dollar_markets": {
+      "count": 50,
+      "over_2_million": 9,
+      "highest": {"city": "Boston_Beacon_Hill", "median": 3092500}
+    },
+    "affordability_calculation": {
+      "median_home_price": 638000,
+      "mortgage_rate": 6.1,
+      "down_payment_20pct": 127600,
+      "loan_amount": 510400,
+      "monthly_pi": 3096,
+      "monthly_taxes_insurance": 900,
+      "total_monthly": 3996,
+      "annual_housing_cost": 47952,
+      "income_needed_28pct_rule": 171257,
+      "income_needed_30pct_rule": 159840,
+      "median_household_income": 104800,
+      "affordability_gap": 66457
+    },
+    "housing_deficit": {
+      "units_needed_by_2030": 222000,
+      "40b_units_produced_50_years": 70000,
+      "construction_cost_vs_national": "+22%"
+    }
+  },
+  "healthcare": {
+    "source": "CHIA 2025, KFF EHBS 2024, MA DOI",
+    "premiums_2024": {
+      "ma_family_annual": 28151,
+      "us_family_annual": 24540,
+      "premium_vs_national": "+14.7%"
+    },
+    "per_capita_spending_2020": {
+      "massachusetts": 13319,
+      "national": 10191,
+      "vs_national": "+30.7%"
+    },
+    "thce_growth_2023": {
+      "actual": 8.6,
+      "benchmark": 3.6,
+      "over_benchmark": "+139%"
+    },
+    "affordability_issues_by_race": {
+      "hispanic": 58.2,
+      "black": 49.1,
+      "white": 39.2
+    },
+    "rate_increases_2026": {
+      "average_approved": 11.5,
+      "range": "8-15%"
+    }
+  },
+  "energy": {
+    "source": "EIA, Mass.gov",
+    "electricity_rates": {
+      "ma_residential_cents_kwh": 29.86,
+      "national_average": 16.26,
+      "vs_national": "+57%"
+    },
+    "annual_cost_premium": {
+      "per_household": 1188,
+      "statewide_total_billion": 4.4
+    },
+    "rate_increase_since_2014": {
+      "percent": 46,
+      "vs_inflation": "2.5x faster"
+    }
+  },
+  "consumption_vs_income_2024": {
+    "source": "BEA SAPCE & SAINC 2024",
+    "income_growth": 5.09,
+    "consumption_growth": 6.10,
+    "gap": -1.01,
+    "key_consumption_drivers": {
+      "financial_services": 12.20,
+      "transportation": 9.67,
+      "healthcare": 7.41,
+      "housing_utilities": 6.76
+    },
+    "interpretation": "Even with strong 5%+ income growth, consumption grew faster, eroding purchasing power"
+  }
+}
